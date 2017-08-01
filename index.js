@@ -23,9 +23,6 @@ function checkAndAdd(name, surname) {
     });
     if (!found && (!name == "" || !surname == "")) {
         ArrayUser.push(new User(name, surname));
-        console.info("New Array:", ArrayUser);
-        console.info(ArrayUser[(ArrayUser.length) - 1].getName());
-        console.info(ArrayUser[(ArrayUser.length) - 1].getSurname());
         let li2 = document.createElement('li');
         li2.innerHTML = ArrayUser[(ArrayUser.length) - 1].getName() + " " + ArrayUser[(ArrayUser.length) - 1].getSurname() + '<button id=' + ArrayUser[ArrayUser.length - 1].getName() + ArrayUser[ArrayUser.length - 1].getSurname() + ' onclick="assente(this.id)">elimina</button>';
         document.getElementById("ul").appendChild(li2);
@@ -53,7 +50,6 @@ function getRandom(){
 function getRandomIndex(max) {
     if(max >= 0){
         let random = Math.floor(Math.random() * (max + 1));
-        console.info("Random extract array position: ", random);
         document.write("<h1> Choiced user: " + ArrayUser[random].getName() +" "+ ArrayUser[random].getSurname());
     }
     else
