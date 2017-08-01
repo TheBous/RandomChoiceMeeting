@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>randomUser</title>
+</head>
+<body>
+
+
+        <input id="name" type="text" placeholder="Inserisci nome utente che parteciperà al meeting">
+        <input id="surname" type="text" placeholder="Inserisci cognome utente che parteciperà al meeting">
+        <button onclick="checkAndAdd(document.getElementById('name').value, document.getElementById('surname').value)">Inserisci persona</button>
+        <ul id="ul"></ul>
+        <button onclick="getRandom()">RANDOMIZZA PARTECIPANTI</button>
+
+
+<script type="text/javascript" src="model/User.js"></script>
+<script type="text/javascript" src="model/ExcludedUser.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+
+</html>
